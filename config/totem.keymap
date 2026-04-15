@@ -36,33 +36,39 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <17 18>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
             layers = <0 1 2 3 4 5>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_toggle_numpad {
             bindings = <&tog 4>;
             key-positions = <27 28 29>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_tab_left {
             bindings = <&kp LC(PG_UP)>;
             key-positions = <27 28>;
             layers = <2>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_tab_right {
             bindings = <&kp LC(PAGE_DOWN)>;
             key-positions = <28 29>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_accent_acute {
@@ -92,21 +98,25 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <8 9>;
+            require-prior-idle-ms = <200>;
         };
 
         sk_rshift {
             bindings = <&sk RSHFT>;
             key-positions = <16 17>;
+            require-prior-idle-ms = <200>;
         };
 
         sk_lsft {
             bindings = <&sk LSHFT>;
             key-positions = <12 13>;
+            require-prior-idle-ms = <200>;
         };
     };
 

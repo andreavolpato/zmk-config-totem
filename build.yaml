@@ -1,10 +1,28 @@
+# This file generates the GitHub Actions matrix.
+# For simple board + shield combinations, add them to the top level board and
+# shield arrays, for more control, add individual board + shield combinations
+# to the `include` property. You can also use the `cmake-args` property to
+# pass flags to the build command and `artifact-name` to assign a name to
+# distinguish build outputs from each other:
+#
+# board: [ "seeeduino_xiao_ble" ]
+# shield: [ "totem_left", "totem_right" ]
+# include:
+#   - board: seeeduino_xiao_ble
+#     shield: totem_left
+#     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+#     artifact-name: totem_left_with_logging
+#
+---
 include:
-  - board: seeeduino_xiao_ble
+  # Studio RPC should only be enabled on the central/left half.
+  - board: xiao_ble//zmk
     shield: totem_left
     snippet: studio-rpc-usb-uart
-    cmake_args: -DCONFIG_ZMK_STUDIO=y
-  - board: seeeduino_xiao_ble
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: xiao_ble//zmk
     shield: totem_right
-  - board: seeeduino_xiao_ble
+  # Keep a reset image around to clear stored BLE bonds/settings when split pairing goes bad.
+  - board: xiao_ble//zmk
     shield: settings_reset
-# there is no settingsreset (needed) for the XIAO
+    artifact-name: settings_reset-xiao_ble
