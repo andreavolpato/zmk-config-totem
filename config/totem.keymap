@@ -193,7 +193,7 @@
         colemak-dh {
             bindings = <
               &kp Q                  &kp W                  &kp F                &kp P               &kp B                &kp J                  &kp L               &layer_ht 6 U            &kp Y                     &kp MINUS
-              &kp Z                  &kp R                  &kp S                &kp T               &kp G                &kp M                  &kp N               &kp E                    &kp I                     &kp O
+              &kp A                  &kp R                  &kp S                &kp T               &kp G                &kp M                  &kp N               &kp E                    &kp I                     &kp O
 &kp LEFT_GUI  &homerow_l LEFT_WIN Z  &homerow_l LEFT_ALT X  &homerow_l LSHIFT C  &homerow_r LCTRL D  &kp V                &kp K                  &homerow_r RCTRL H  &homerow_r RSHIFT COMMA  &homerow_r RIGHT_ALT DOT  &homerow_r RWIN UNDER  &kp UNDER
                                                             &layer_ht 5 ESCAPE   &layer_ht 4 TAB     &layer_ht 2 SPACE    &layer_ht 3 BACKSPACE  &layer_ht 5 DELETE  &mt RSHFT ENTER
             >;
